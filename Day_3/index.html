@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Magic Eightball</title>
+	</head>
+	<style>
+        body {background-color: DimGrey;}
+        h1   {color: Coral;}
+        p    {color: DarkOrange;}
+        form {color: DarkOrange;}
+    </style>
+	<body>
+		<h1>Magic Eightball</h1>
+		<p>{{ prompt }}</p>
+		<form name="input" method="get" action="/eightball">
+			Question: <input type="text" name="question">
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
