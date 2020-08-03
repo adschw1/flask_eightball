@@ -1,3 +1,5 @@
+from random import choice
+
 yes = [
     "It is certain.",
     "As I see it, yes.",
@@ -28,5 +30,18 @@ maybe = [
 ]
 
 
+def get_answer():
+    answers = yes + no + maybe
+    return choice(answers)
+
+
+def prompt_user():
+    question = str(input('Ask the Magic Eightball a Yes/No question: '))
+    return question
+
+
 if __name__ == '__main__':
-    print('Tech Camp 2020!')
+    question = prompt_user()
+    print(question)
+    answer = get_answer()
+    print(answer)
