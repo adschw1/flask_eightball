@@ -1,5 +1,5 @@
-Flask Eightball
-===============
+Flask Magic Eightball
+=====================
 
 Note you must be inside the `src/` directory to run the app.
 
