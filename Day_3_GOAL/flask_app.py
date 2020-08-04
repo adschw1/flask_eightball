@@ -16,7 +16,3 @@ def eightball():
 	answer = get_answer()
 	question = request.args.get('question')
 	return render_template('eightball.html', question=question, answer=answer)
-
-
-if __name__ == '__main__':
-    app.run()
