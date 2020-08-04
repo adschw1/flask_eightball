@@ -12,7 +12,3 @@ def my_app():
 def say_hello():
 	name = request.args.get('name')
     return render_template('hello.html', name=name)
-
-
-if __name__ == '__main__':	
-	app.run()
